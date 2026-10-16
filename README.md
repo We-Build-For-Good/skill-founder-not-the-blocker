@@ -24,19 +24,19 @@ It prevents the common trap where an AI pauses every ten minutes to ask for perm
 
 ### For Claude Code
 ```bash
-git clone https://github.com/webuildforgood/skill-founder-not-the-blocker.git ~/.claude/skills/founder-not-the-blocker
+git clone https://github.com/We-Build-For-Good/skill-founder-not-the-blocker.git ~/.claude/skills/founder-not-the-blocker
 ```
 
 ### For Cursor
 ```bash
 mkdir -p .cursor/skills
-git clone https://github.com/webuildforgood/skill-founder-not-the-blocker.git .cursor/skills/founder-not-the-blocker
+git clone https://github.com/We-Build-For-Good/skill-founder-not-the-blocker.git .cursor/skills/founder-not-the-blocker
 ```
 
 ### For Antigravity / Open Agent Skills
 ```bash
 mkdir -p .agents/skills
-git clone https://github.com/webuildforgood/skill-founder-not-the-blocker.git .agents/skills/founder-not-the-blocker
+git clone https://github.com/We-Build-For-Good/skill-founder-not-the-blocker.git .agents/skills/founder-not-the-blocker
 ```
 
 ---
