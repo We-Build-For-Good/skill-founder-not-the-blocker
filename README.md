@@ -16,7 +16,7 @@ It prevents the common trap where an AI pauses every ten minutes to ask for perm
 ## The Core Rule
 
 1. **Reversible decisions** (code, CSS, refactoring, tests) are decided by default: the AI announces its course of action and proceeds unless told to stop.
-2. **Consequential decisions** (money, external communications, credentials, legal text) are pre-computed into single-click decision packets.
+2. **Consequential decisions** (money, external communications, credentials, legal text, and destructive or irreversible changes such as deleting data or destructive migrations) are pre-computed into single-click decision packets.
 
 ---
 

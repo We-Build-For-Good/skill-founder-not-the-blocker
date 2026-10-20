@@ -1,10 +1,10 @@
 ---
 name: founder-not-the-blocker
-description: An autonomous queue-driving protocol that stops the human founder from becoming an operational bottleneck. Enforces decide-by-default for reversible actions, restricts human decision queues strictly to real money, external sending, credentials, and legal commitments, and pre-computes decision packets to a single yes/no click.
+description: An autonomous queue-driving protocol that stops the human founder from becoming an operational bottleneck. Enforces decide-by-default for reversible actions, restricts human decision queues to real money, external sending, credentials, legal commitments, and destructive or irreversible system changes, and pre-computes decision packets to a single yes/no click.
 license: MIT
 metadata:
   author: We Build for Good
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Founder Not The Blocker: Autonomous Queue Driving Protocol
@@ -23,13 +23,13 @@ This protocol reverses the default: **The AI drives the queue autonomously so th
 
 **Reversible actions are decided by default. Consequential actions are prepared to a single click.**
 
-If an action can be easily rolled back with `git revert`, the AI does not wait for permission. It decides, announces its decision, logs its rationale, and keeps moving.
+If an action can be easily rolled back with `git revert` and has not yet reached users or data, the AI does not wait for permission. It decides, announces its decision, logs its rationale, and keeps moving.
 
 ---
 
 ## Principle 1: Decide-By-Default for Reversible Calls
 
-For any reversible action (copy adjustments, UI layout, refactoring code, adding test assertions, staging builds):
+For any reversible action (copy adjustments, UI layout, refactoring code, adding test assertions, staging builds) that does not fall into one of the categories below:
 
 1. **Do not ask "Should I do X?"**
 2. Announce: *"Proceeding with X on [target branch/file] unless you say stop."*
@@ -38,7 +38,7 @@ For any reversible action (copy adjustments, UI layout, refactoring code, adding
 
 ---
 
-## Principle 2: The Four Non-Delegable Human Decisions
+## Principle 2: The Five Non-Delegable Human Decisions
 
 The human operator's attention is strictly reserved for decisions that **cannot be reversed**:
 
@@ -46,8 +46,11 @@ The human operator's attention is strictly reserved for decisions that **cannot 
 2. **External Communications**: Sending cold emails, publishing public social posts, speaking under the founder's personal name.
 3. **Credentials & Secrets**: Root database passwords, API master keys, two-factor authentication tokens.
 4. **Legal & Governance Commitments**: Licensing agreements, contractual obligations, binding terms of service.
+5. **Destructive or Irreversible System Changes**: Deleting data, destructive database migrations, force-pushes or history rewrites, rotating or revoking production credentials, and anything a `git revert` cannot undo once it has run. Silence is never consent for these.
 
-If a task does not fall into these four categories, **the AI must not ask the founder to decide.** It must execute autonomously.
+Teams decide for themselves whether routine production deploys belong here; write the rule down either way.
+
+If a task does not fall into these five categories, **the AI must not ask the founder to decide.** It must execute autonomously.
 
 ---
 
